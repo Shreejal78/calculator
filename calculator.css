@@ -80,6 +80,7 @@ h1{
 }
 .btn:hover{
   background:#585858;
+  cursor: pointer;
 }
 
 

@@ -16,30 +16,31 @@
 <body>
   <h1>CALCULATOR</h1>
   <div class="calculator">
-    <div class="screen">0</div>
+    <div class="screen" id="screen">0</div>
     <div class="buttons">
       <button class="btn clear" id="clear">C</button>
       <button class="btn clear" id="clearAll">AC</button>
-      <button class="btn">^x</button>
-      <button class="btn">÷</button>
-      <button class="btn">9</button>
-      <button class="btn">8</button>
-      <button class="btn">7</button>
-      <button class="btn">×</button>
-      <button class="btn">6</button>
-      <button class="btn">5</button>
-      <button class="btn">4</button>
-      <button class="btn">-</button>
-      <button class="btn">3</button>
-      <button class="btn">2</button>
-      <button class="btn">1</button>
-      <button class="btn">+</button>
-      <button class="btn">00</button>
-      <button class="btn">0</button>
-      <button class="btn">.</button>
-      <button class="btn">=</button>
+      <button data-digit = '**' class="btn calc">^</button>
+      <button data-digit = '/' class="btn calc" >÷</button>
+      <button data-digit = '9' class="btn calc" >9</button>
+      <button data-digit = '8' class="btn calc" >8</button>
+      <button data-digit = '7' class="btn calc" >7</button>
+      <button data-digit = '*' class="btn calc" >×</button>
+      <button data-digit = '6' class="btn calc">6</button>
+      <button data-digit = '5' class="btn calc" >5</button>
+      <button data-digit = '4' class="btn calc" >4</button>
+      <button data-digit = '-' class="btn calc" >-</button>
+      <button data-digit = '3' class="btn calc" >3</button>
+      <button data-digit = '2' class="btn calc" >2</button>
+      <button data-digit = '1' class="btn calc" >1</button>
+      <button data-digit = '+' class="btn calc" >+</button>
+      <button data-digit = '00' class="btn calc">00</button>
+      <button data-digit = '0' class="btn calc">0</button>
+      <button data-digit = '.' class="btn calc">.</button>
+      <button class="btn equal">=</button>
     </div>
   </div>
+  <script src="calculator.js"></script>
 </body>
 
 </html>
