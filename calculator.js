@@ -1,6 +1,7 @@
 let calculationDigits = document.querySelectorAll(".calc")
 let calcStr = '';
 let displayStr = ''
+let ans = ""
 let screen = document.getElementById("screen")
 calculationDigits.forEach(letter => {
     letter.addEventListener("click", () => {
@@ -12,9 +13,13 @@ calculationDigits.forEach(letter => {
 })
 console.log(eval(3**3))
 document.querySelector(".equal").addEventListener("click", () => {
-    screen.innerText = eval(calcStr);
-    calcStr = ""
+    ans = eval(calcStr)
+    screen.innerText = ans;
+    calcStr =""
     displayStr = ""
+    calcStr += ans
+    displayStr += ans
+    
 })
 
 document.getElementById("clearAll").addEventListener("click",()=>{
